@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .section {
+        overflow: hidden;
+      }
+      .ie {
+        width: 251px;
+        height: 186px;
+        margin: 50px auto;
+      }
+      .xl {
+        width: 920px;
+        height: 180px;
+        margin: 100px auto 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .xl img {
+        /* flex: 1; */
+        width: 98px;
+        height: 93px;
+        opacity: 0;
+      }
+      .safe {
+        width: 772px;
+        height: 50px;
+        margin: 0 auto;
+      }
+      #fullpage .first.curent .xl img {
+        /* //第一屏 扩散的样式 */
+        margin: 0 15px;
+        opacity: 1;
+        transition: all 1.5s;
+      }
+      .second > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+      }
+      .dun {
+        width: 512px;
+        height: 550px;
+        margin-top: 80px;
+        font-size: 0;
+        /* flex: 1; */
+        /* justify-content: start;  */
+        /* width: 100%; */
+      }
+      .jiu {
+        /* flex: 1; */
+        /* width: 100%; */
+        margin-top: 150px;
+      }
+      .dun img:first-child {
+        transform: translate(100px, 200px) rotate(80deg);
+      }
+      .dun img:nth-child(2) {
+        transform: translate(200px, 230px) rotate(380deg);
+      }
+      .dun img:nth-child(3) {
+        transform: translate(100px, 230px) rotate(20deg);
+      }
+      .dun img:nth-child(4) {
+        transform: translate(250px, 330px) rotate(180deg);
+      }
+      .dun img:nth-child(5) {
+        transform: translate(550px, 330px) rotate(180deg);
+      }
+      .dun img:nth-child(6) {
+        transform: translate(550px, 330px) rotate(680deg);
+      }
+      .second.curent .dun img {
+        transform: translate(0, 0);
+        transition: all 1.5s;
+      }
+      .third > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 150px  100px 0;
+      }
+      .du{
+        width: 631px;
+        height: 278px;
+        margin-top: 70px;  
+      }
+    .hj_warp{
+        width: 453px;
+        height: 449px;
+        position: relative;
+    }
+    .hj{
+        width: 203px;
+        height: 204px;
+        position: absolute;
+        left: -300px;
+        bottom: -300px;
+    }
+    .third.curent .hj {
+        transition: all 1.5s;
+        left: 130px;
+        bottom: 130px;
+    }
+    .four>div{
+        display: flex;
+        justify-content: space-between;
+        padding: 150px  100px 0;
+    }
+    .zhi{
+        width: 510px;
+        height: 400px;
+    }
+    .zhi .search{
+        width: 100%;
+        height: 60px;
+        position: relative;
+    }
+    .zhi .search .text{
+        width: 100px;
+        height: 22px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+    }
+   
+    .zhi .search img{
+       width:100%;
+    }
+    .result{
+        width: 100%;
+    }
+    .result img{
+        width: 100%;
+        height: 0;
+    }
+    .zhi .search {
+        transform: translate(-700px);
+    }
+    .zhi .search .text img {
+        height: 22px;
+        width: 0;
+    }
+    .four.curent .zhi .search  {
+        transform: translate(0,0);
+        transition: all 1s;
+    }
+    .four.curent .zhi .search .text img {
+        height: 22px;
+        width: 99px;
+        transition: all 1s 1s;
+    }
+    .four.curent .zhi .result img{
+        height: 372px;
+        transition: all 1s  2s;
+
+    }
+    
+     
+   
+    </style>
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section first">
+        <div class="ie"><img src="./images/logo.png" alt="" /></div>
+        <div class="xl">
+          <img src="./images/text_1.png" alt="" />
+          <img src="./images/text_2.png" alt="" />
+          <img src="./images/text_3.png" alt="" />
+          <img src="./images/text_4.png" alt="" />
+          <img src="./images/text_5.png" alt="" />
+          <img src="./images/text_6.png" alt="" />
+          <img src="./images/text_7.png" alt="" />
+          <img src="./images/text_8.png" alt="" />
+        </div>
+        <div class="safe"><img src="./images/info_1.png" alt="" /></div>
+      </div>
+      <div class="section second">
+        <div class="dun">
+          <img src="./images/shield_1.png" alt="" />
+          <img src="./images/shield_2.png" alt="" />
+          <img src="./images/shield_3.png" alt="" />
+          <img src="./images/shield_4.png" alt="" />
+          <img src="./images/shield_5.png" alt="" />
+          <img src="./images/shield_6.png" alt="" />
+          <img src="./images/shield_7.png" alt="" />
+          <img src="./images/shield_8.png" alt="" />
+          <img src="./images/shield_9.png" alt="" />
+        </div>
+        <div class="jiu"><img src="./images/info_2.png" alt="" /></div>
+      </div>
+      <div class="section third">
+          <div class="du">
+              <img src="./images/info_3.png" alt="">
+          </div>
+          <div class="hj_warp">
+              <img src="./images/circle.png" alt="">
+              <div class="hj">
+                  <img src="./images/rocket.png" alt="">
+              </div>
+          </div>
+
+      </div>
+      <div class="section four">
+          <div class="zhi">
+            <div class="search">
+                <div class="text">
+                    <img src="./images/key.png" alt="">
+                </div>
+                <img src="./images/search.png" alt="">
+            </div>
+            <div class="result">
+                <img src="./images/result.png" alt="">
+            </div>
+          </div>
+          <div class="cong">
+              <img src="./images/info_4.png" alt="">
+          </div>
+      </div>
+      <div class="section five">5</div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.fullPage.min.js"></script>
+    <script>
+      $("#fullpage").fullpage({
+        sectionsColor: ["#0da5d6", "#2ab561", "#de8910","#16ba9d"],
+        afterLoad: function(a, key, c) {
+          $("#fullpage .section").removeClass("curent");
+          console.log(111);
+          setTimeout(function() {
+            $("#fullpage .section")
+              .eq(key - 1)
+              .addClass("curent");
+          }, 10);
+        }
+      });
+    </script>
+  </body>
+</html>
